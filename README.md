@@ -1,31 +1,32 @@
-<<<<<<< HEAD
 # image-upload
 
-a [Sails v1](https://sailsjs.com) application
+Hi there, sorry for the delay. Only had chance to do it today.
+
+So we should assume some limitiations in this solution. First of all because of time I can spent (~4-5 hrs) and reality of such solutions.
+To create a trully cool file manager app, we should spend at least few weeaks. It includes UI, UX, product, QA and many other inputs. Limitinations in this solution:
+ - Do not have pretty UI/UX
+ - Do not have prod ready tests
+ - Written in vanila js
+ - Doesn't scale
+ - Doesn't do replics
+ 
+ 
+# tests
+
+I've not written tests :( To write tests for this solution I'd use jest with snapshot testing and I'd test every function. As you've may noticed I wrote pretty good composoble code, with a lot of functions and each of that can be tested.
+In the peretty common way:
+
+```
+this.updateTotal(total)
+expect(this.$total.innerHTML).to.eql(total)
+```
+
+To test async stuff I'd use fake server to mock API.
 
 
-### Links
+# How to run?
 
-+ [Get started](https://sailsjs.com/get-started)
-+ [Sails framework documentation](https://sailsjs.com/documentation)
-+ [Version notes / upgrading](https://sailsjs.com/documentation/upgrading)
-+ [Deployment tips](https://sailsjs.com/documentation/concepts/deployment)
-+ [Community support options](https://sailsjs.com/support)
-+ [Professional / enterprise options](https://sailsjs.com/enterprise)
-
-
-### Version info
-
-This app was originally generated on Sat Apr 21 2018 22:32:57 GMT+0300 (EEST) using Sails v1.0.1.
-
-<!-- Internally, Sails used [`sails-generate@1.15.20`](https://github.com/balderdashy/sails-generate/tree/v1.15.20/lib/core-generators/new). -->
-
-
-
-<!--
-Note:  Generators are usually run using the globally-installed `sails` CLI (command-line interface).  This CLI version is _environment-specific_ rather than app-specific, thus over time, as a project's dependencies are upgraded or the project is worked on by different developers on different computers using different versions of Node.js, the Sails dependency in its package.json file may differ from the globally-installed Sails CLI release it was originally generated with.  (Be sure to always check out the relevant [upgrading guides](https://sailsjs.com/upgrading) before upgrading the version of Sails used by your app.  If you're stuck, [get help here](https://sailsjs.com/support).)
--->
-
-=======
-# image_uploader
->>>>>>> 739a289c844894c76a27c838614e8b95aa6dac16
+- Clone repo
+- run `npm install`
+- run `sails lift`
+- go to `localhost:1337`
